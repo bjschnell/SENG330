@@ -1,4 +1,3 @@
-#include <QCoreApplication>
 #include <iostream>
 #include <string>
 
@@ -82,17 +81,14 @@ public:
     }
 };
 
-Prototype* Factory::getMachine1() = 0;
-Prototype* Factory::getMachine2() = 0;
-Prototype* Factory::getMachine3() = 0;
-Prototype* Factory::getMachine4() = 0;
+Prototype* Factory::machine1 = 0;
+Prototype* Factory::machine2 = 0;
+Prototype* Factory::machine3 = 0;
+Prototype* Factory::machine4 = 0;
 
 
-int main(int argc, char *argv[])
+int main()
 {
-    QCoreApplication a(argc, argv);
-
-
     Factory::init();
     Prototype* demo;
 
@@ -112,6 +108,5 @@ int main(int argc, char *argv[])
     demo = Factory::getMachine4();
     cout << "Machine Type:" << demo->getType() << " ID: " << demo->getValue() << endl;
 
-    return a.exec();
 }
 
