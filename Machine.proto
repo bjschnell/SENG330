@@ -1,0 +1,11 @@
+syntax = "proto2";
+package machines;
+
+message Machine {
+    required string TYPE = 1;
+    required string ID = 2;
+}
+
+message machinelist {
+    repeated Machine machine = 1;
+}

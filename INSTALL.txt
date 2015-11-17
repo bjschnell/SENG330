@@ -1,0 +1,11 @@
+To run the program properly please ensure the following are installed:
+gcc compiler
+make
+
+To run the project open qtcreator and do the following:
+1. Open terminal and cd to the location of the SENG330 Folder
+2. enter make in folder.
+3. enter ./assign2 to run the program.
+4. follow instructions as prompted
+
+
