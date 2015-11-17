@@ -8,4 +8,7 @@ To run the project open qtcreator and do the following:
 3. enter ./assign2 to run the program.
 4. follow instructions as prompted
 
-
+To run the google test framework do the following:
+1. Open terminal and cd to the location of SENG330 Folder.
+2. Enter make test in folder. 
+3. enter ./tests

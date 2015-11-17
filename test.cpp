@@ -163,7 +163,7 @@ TEST(startSameEndDiff, samediff){
 	EXPECT_NE(demo[0]->getType(),demo[1]->getType());
 	EXPECT_NE(demo[0]->getName(),demo[1]->getName());
 	demo[1]->setName("1");
-	EXPECT_NE(demo[0]->getName(),demo[1]->getName());
+	EXPECT_EQ(demo[0]->getName(),demo[1]->getName());
 }
 
 
